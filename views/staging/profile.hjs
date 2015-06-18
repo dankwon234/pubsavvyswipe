@@ -1,0 +1,36 @@
+<html>
+  <head>
+  <link rel = "stylesheet" href = "/staging/styles/style.css">
+  
+    </NEEEDED FOR UPLOAD>
+    <script src="https://malsup.github.com/jquery.form.js"></script>
+    <script src="/staging/js/fileupload/angular-file-upload-shim.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js'></script>
+    <script src="https://code.angularjs.org/1.2.20/angular-sanitize.min.js"></script>
+    <script src="/staging/js/fileupload/angular-file-upload.js"></script>
+
+    <script src = '/staging/app/app.js'></script>
+    <script src = '/staging/app/profile.js'></script>
+
+   
+  </head>
+   
+  <body ng-app="PubSavvySwipe" ng-controller="ProfileController" ng-init="init()">
+    <h1> <% page %> </h1>   
+     
+  <div class ="section">
+    <h2>Register</h2>
+   
+    <input ng-model= "profile.firstName" type="text" placeholder = "First Name" /> <br />
+    <input ng-model= "profile.lastName" type="text" placeholder = "Last Name" /> <br />
+   	<input ng-model= "profile.email" type="text" placeholder = "Email" /> <br />
+   	<input ng-model= "profile.password" type="password" placeholder = "Password" /> <br />
+   	<button ng-click= "register()">Sign Up</button>
+  
+  </div>
+
+	 
+  </body>
+
+
+</html>
