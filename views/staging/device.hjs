@@ -22,7 +22,7 @@
   <div class ="section">
     <h2>Register Device</h2>
    
-    <input ng-model= "device.deviceToken" type="text" placeholder = "First Name" /> <br />
+    <input ng-model= "device.deviceToken" type="text" placeholder = "Device Toekn" /> <br />
    	<button ng-click= "register()">Sign Up</button>
   
   </div>

@@ -9,9 +9,9 @@ var bodyParser = require('body-parser');
 var api = require('./routes/api');
 var site = require('./routes/site');
 var admin = require('./routes/admin');
+var staging = require('./routes/staging');
 
 
-//TEST COMMENT
 var mongoose = require('mongoose');
 // Here we find an appropriate database to connect to, defaulting to localhost if we don't find one.  
 var uristring = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/'+appName;
@@ -47,6 +47,7 @@ app.use('/', site);
 app.use('/api', api);
 app.use('/site', site);
 app.use('/admin', admin);
+app.use('/staging', staging);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

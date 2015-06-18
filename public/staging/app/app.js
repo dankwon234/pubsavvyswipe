@@ -1,1 +1,1 @@
-var app = angular.module('PubSavvySwipe', ['ProfileModule']);
+var app = angular.module('PubSavvySwipe', ['ProfileModule', 'DeviceModule']);
